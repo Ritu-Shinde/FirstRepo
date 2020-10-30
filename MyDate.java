@@ -1,6 +1,5 @@
 package Practice;
 
-import java.util.Scanner;
 
 public class MyDate 
 {
@@ -42,22 +41,11 @@ public class MyDate
 		System.out.println(day+"/"+month+"/"+year);
 	}
 	
-	public void accept()
-	{
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter Day");
-		int day=sc.nextInt();
-		System.out.println("Enter Day");
-		int month=sc.nextInt();
-		System.out.println("Enter Day");
-		int year=sc.nextInt();
-		System.out.println(day+"/"+month+"/"+year);
-	}
+	
 	public static void main(String[] args) {
 		System.out.println("Using Default Constructor Date is:");
 		MyDate d=new MyDate(20,10,2020);
 		d.display();
-		d.accept();
 		System.out.println("Using Paramerized Constructor Date is:");
 		MyDate d1=new MyDate();
 		d1.setDay(20);
